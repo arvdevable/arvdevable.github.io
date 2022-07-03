@@ -30,8 +30,8 @@ Hi, I'm arvdevable. I'm a multi-genre music producer, music -- or story writer, 
 
 #### Contact:
  > **Discord** : arvdevable#7490\
- > **E-mail** : arvdevinfo@gmail.com
+ > **E-mail** : [arvdevinfo@gmail.com](mailto://arvdevinfo@gmail.com)
 
 #### Donate!
- > **Ko-Fi** _https://ko-fi.com/arvdevable_ \
- > **Buy Me A Coffee** _https://www.buymeacoffee.com/arvdevable_
+ > **Ko-Fi** _[https://ko-fi.com/arvdevable](https://ko-fi.com/arvdevable)_ \
+ > **Buy Me A Coffee** _[https://www.buymeacoffee.com/arvdevable](https://www.buymeacoffee.com/arvdevable)_
