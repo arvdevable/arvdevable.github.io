@@ -1,0 +1,288 @@
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arvdevable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="main-content">
+    <!-- Main content goes here -->
+
+
+    <div class="container">
+      <div class="background-image"></div>
+      <div class="text">
+        <header>
+          <h1>arvdevable</h1>
+        </header>
+        <nav id="myTopnav">
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="https://www.youtube.com/c/arvdevable">youtube</a></li>
+            <li><a href="https://open.spotify.com/artist/6kJ2RLRq825l8lApyUDWIo?si=db686675252f4205">spotify artist</a>
+            </li>
+            <li><a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScJgqvy6Iam81JBnjwvI9egd90zKWpgmOB2q5xFPCADb1ww4g/viewform?usp=sf_link">contact</a>
+            </li>
+
+          </ul>
+
+          <nav id="mobile-nav">
+            <a href="index.html">home</a>
+            <a href="https://www.youtube.com/c/arvdevable">youtube</a>
+            <a href="https://open.spotify.com/artist/6kJ2RLRq825l8lApyUDWIo?si=db686675252f4205">spotify artist</a>
+
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScJgqvy6Iam81JBnjwvI9egd90zKWpgmOB2q5xFPCADb1ww4g/viewform?usp=sf_link">contact</a>
+          </nav>
+
+
+
+
+        </nav>
+        <main>
+          <div class="h23" id="words">
+            <h2></h2>
+          </div>
+
+          <div id="words">
+            <!-- Words will be added here by JavaScript -->
+          </div>
+
+          <script>
+            const container = document.getElementById("word-container");
+
+            const words = [
+              {
+                text: "Illuminate",
+                class: "normal",
+                redirect: "https://www.youtube.com/watch?v=4enNun-4V_I",
+                probability: 0.8
+              },
+              {
+                text: "Bioluminescence",
+                class: "rare",
+                style: "background-color: blue;",
+                probability: 0.35
+              },
+              {
+                text: "life",
+                class: "normal",
+                probability: 0.5
+              },
+              {
+                text: "like",
+                class: "rare",
+                probability: 0.2
+              },
+              {
+                text: "faded",
+                class: "normal",
+                probability: 0.6
+              },
+              {
+                text: "memories",
+                class: "rare",
+                redirect: "memories.html",
+                probability: 0.3
+              },
+              {
+                text: "HACKED BY ADVAKORE x",
+                class: "rare adv",
+                probability: 0.05
+              },
+              {
+                text: "kindhearted",
+                class: "subtitle",
+                probability: 1.0
+              },
+              {
+                text: "Bright",
+                class: "normal",
+                probability: 0.8
+              },
+              {
+                text: "Radiate",
+                class: "normal",
+                probability: 0.7
+              },
+              {
+                text: "Luminary",
+                class: "normal",
+                probability: 0.65
+              },
+              {
+                text: "Glow",
+                class: "normal",
+                probability: 0.75
+              },
+              {
+                text: "Illumine",
+                class: "normal",
+                probability: 0.8
+              },
+              {
+                text: "Fluoresce",
+                class: "normal",
+                probability: 0.7
+              },
+              {
+                text: "Shimmer",
+                class: "normal",
+                probability: 0.65
+              },
+              {
+                text: "Sparkle",
+                class: "normal",
+                probability: 0.7
+              },
+              {
+                text: "Glimmer",
+                class: "normal",
+                probability: 0.65
+              },
+              {
+                text: "Twinkle",
+                class: "normal",
+                probability: 0.6
+              },
+              {
+                text: "Light up",
+                class: "normal",
+                probability: 0.75
+              },
+              {
+                text: "Illuminated",
+                class: "normal",
+                probability: 0.8
+              },
+              {
+                text: "Flashing",
+                class: "normal",
+                probability: 0.65
+              },
+              {
+                text: "Blinking",
+                class: "normal",
+                probability: 0.6
+              },
+              {
+                text: "Winking",
+                class: "normal",
+                probability: 0.55
+              },
+              {
+                text: "Flickering",
+                class: "normal",
+                probability: 0.5
+              },
+              {
+                text: "Glowing",
+                class: "normal",
+                probability: 0.75
+              },
+              {
+                text: "Dazzling",
+                class: "normal",
+                probability: 0.7
+              },
+              {
+                text: "Shining",
+                class: "normal",
+                probability: 0.65
+              }
+
+            ];
+            // Shuffle the words array
+            words.sort(() => Math.random() - 0.5);
+
+            // Add the words to the page one at a time
+            let index = 0;
+            function addWord() {
+              // Check if there are more words to display
+              if (index >= words.length) {
+                return;
+              }
+
+              // Get the next word
+              const word = words[index];
+
+              // Check if the word should be displayed
+              if (Math.random() < word.probability) {
+                // Get the container element
+                const container = document.getElementsByClassName("h23")[0];
+
+                // Create a new element for the text
+                const element = document.createElement("h2");
+                element.textContent = word.text;
+                if (word.redirect) {
+                  element.addEventListener("click", () => {
+                    window.location.href = word.redirect;
+                  });
+                  element.style.cursor = "pointer";
+                }
+
+                // Add the element to the container
+                container.appendChild(element);
+              }
+
+              function mashUpWords(word1, word2) {
+    // Get the container element
+    const container = document.getElementsByClassName("h23")[0];
+
+    // Create a new element for the mashed-up text
+    const element = document.createElement("h2");
+    element.textContent = word1.text + " " + word2.text;
+    if (word1.redirect || word2.redirect) {
+        element.addEventListener("click", () => {
+            window.location.href = word1.redirect || word2.redirect;
+        });
+        element.style.cursor = "pointer";
+    }
+
+    // Add the element to the container
+    container.appendChild(element);
+}
+
+
+              // Increase the index by 1
+              index++;
+            }
+
+
+            // Start adding the words
+            addWord();
+            addWord();
+
+
+
+  window.addEventListener('scroll', function() {
+    document.body.style.backgroundPosition = `0% ${window.pageYOffset / 20}px`;
+  });
+
+          </script>
+
+
+
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </main>
+        <footer>
+          <p>&copy;
+            <script>document.write(new Date().getFullYear())</script> arvdevable, All Rights Reserved
+          </p>
+        </footer>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
