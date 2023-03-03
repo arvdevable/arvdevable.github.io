@@ -1,257 +1,81 @@
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <!DOCTYPE html>
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>arvdevable</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Old-fashioned Newspaper Website</title>
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
+  <header>
+    <h1>arvdevable's News</h1>
+    <h2>All the Latest Headlines</h2>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="arvdevable.github.io"><b>NEWS</b></a></li>
+      <li><a href="https://open.spotify.com/playlist/3GLqFbOoIlJeGCRi69oWzc">Music</a></li>
+      <li><a href="https://www.youtube.com/arvdevable">Videos</a></li>
+      <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=arvdevinfo@gmail.com">Contact</a></li>
+      <li><a href="tour.html">TOUR</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+        <h3 class="headlines">Headlines</h3>
+                <article>
+            <h4>TOUR(s)</h4>
+            <a href="https://www.songkick.com/artists/10175622" class="songkick-widget" data-theme="light" data-detect-style="true" data-background-color="transparent" data-locale="en">arvdevable tour dates</a>
+            <script src="//widget.songkick.com/10175622/widget.js"></script>
+            <p><center><small>To view my concerts in Indonesia, please visit my <a href="https://www.loket.com/o/arvdevable" target="_blank">Loket page</a> for ticket purchasing. Thank you.<br><br>
 
-  <div id="main-content">
-    <!-- Main content goes here -->
+                Untuk melihat konser-konser saya di Indonesia, silakan kunjungi halaman <a href="https://www.loket.com/o/arvdevable">Loket</a> saya untuk membeli tiket. Terima kasih.</small></center></p>
+          </article>
+          <article>
+            <h4><a href="https://care-event.github.io">Project CARE</a></h4>
+            <p>Join us for a night of music and community as we come together to support a great cause. Submit your original songs, donate to our event, and help us spread kindness and generosity around the world.<br><br><b>#ProjectCARE</b></p>
+          </article>   
+    </section>
 
-
-    <div class="container">
-      <div class="background-image"></div>
-      <div class="text">
-        <header>
-          <h1>arvdevable</h1>
-        </header>
-        <nav id="myTopnav">
-          <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="https://www.youtube.com/c/arvdevable">youtube</a></li>
-            <li><a href="https://open.spotify.com/artist/6kJ2RLRq825l8lApyUDWIo?si=db686675252f4205">spotify artist</a>
-            </li>
-            <li><a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScJgqvy6Iam81JBnjwvI9egd90zKWpgmOB2q5xFPCADb1ww4g/viewform?usp=sf_link">contact</a>
-            </li>
-
-          </ul>
-
-          <nav id="mobile-nav">
-            <a href="index.html">home</a>
-            <a href="https://www.youtube.com/c/arvdevable">youtube</a>
-            <a href="https://open.spotify.com/artist/6kJ2RLRq825l8lApyUDWIo?si=db686675252f4205">spotify artist</a>
-
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScJgqvy6Iam81JBnjwvI9egd90zKWpgmOB2q5xFPCADb1ww4g/viewform?usp=sf_link">contact</a>
-          </nav>
-
-
-
-
-        </nav>
-        <main>
-          <div class="h23" id="words">
-            <h2></h2>
-          </div>
-
-          <div id="words">
-            <!-- Words will be added here by JavaScript -->
-          </div>
-
-          <script>
-            const container = document.getElementById("word-container");
-
-            const words = [
-              {
-                text: "Illuminate",
-                class: "normal",
-                redirect: "https://www.youtube.com/watch?v=4enNun-4V_I",
-                probability: 0.8
-              },
-              {
-                text: "Bioluminescence",
-                class: "rare",
-                style: "background-color: blue;",
-                probability: 0.35
-              },
-              {
-                text: "life",
-                class: "normal",
-                probability: 0.5
-              },
-              {
-                text: "like",
-                class: "rare",
-                probability: 0.2
-              },
-              {
-                text: "faded",
-                class: "normal",
-                probability: 0.6
-              },
-              {
-                text: "memories",
-                class: "rare",
-                redirect: "memories.html",
-                probability: 0.3
-              },
-              {
-                text: "HACKED BY ADVAKORE x",
-                class: "rare adv",
-                probability: 0.05
-              },
-              {
-                text: "kindhearted",
-                class: "subtitle",
-                probability: 1.0
-              },
-              {
-                text: "Bright",
-                class: "normal",
-                probability: 0.8
-              },
-              {
-                text: "Radiate",
-                class: "normal",
-                probability: 0.7
-              },
-              {
-                text: "Luminary",
-                class: "normal",
-                probability: 0.65
-              },
-              {
-                text: "Glow",
-                class: "normal",
-                probability: 0.75
-              },
-              {
-                text: "Fluoresce",
-                class: "normal",
-                probability: 0.7
-              },
-              {
-                text: "Shimmer",
-                class: "normal",
-                probability: 0.65
-              },
-              {
-                text: "Sparkle",
-                class: "normal",
-                probability: 0.7
-              },
-              {
-                text: "Glimmer",
-                class: "normal",
-                probability: 0.65
-              },
-              {
-                text: "Twinkle",
-                class: "normal",
-                probability: 0.6
-              },
-              {
-                text: "Light up",
-                class: "normal",
-                probability: 0.75
-              },
-              {
-                text: "Flashing",
-                class: "normal",
-                probability: 0.65
-              },
-              {
-                text: "Blinking",
-                class: "normal",
-                probability: 0.6
-              },
-              {
-                text: "Winking",
-                class: "normal",
-                probability: 0.55
-              },
-              {
-                text: "Flickering",
-                class: "normal",
-                probability: 0.5
-              },
-              {
-                text: "Glowing",
-                class: "normal",
-                probability: 0.75
-              },
-              {
-                text: "Dazzling",
-                class: "normal",
-                probability: 0.7
-              },
-              {
-                text: "Shining",
-                class: "normal",
-                probability: 0.65
-              }
-
-            ];
-            // Shuffle the words array
-            words.sort(() => Math.random() - 0.5);
-
-            // Add the words to the page one at a time
-            let index = 0;
-            function addWord() {
-              // Check if there are more words to display
-              if (index >= words.length) {
-                return;
-              }
-
-              // Get the next word
-              const word = words[index];
-
-              // Check if the word should be displayed
-              if (Math.random() < word.probability) {
-                // Get the container element
-                const container = document.getElementsByClassName("h23")[0];
-
-                // Create a new element for the text
-                const element = document.createElement("h2");
-                element.textContent = word.text;
-                if (word.redirect) {
-                  element.addEventListener("click", () => {
-                    window.location.href = word.redirect;
-                  });
-                  element.style.cursor = "pointer";
-                }
-
-                // Add the element to the container
-                container.appendChild(element);
-              }
-
-              // Increase the index by 1
-              index++;
-            }
-
-
-            // Start adding the words
-            addWord();
-
-
-  window.addEventListener('scroll', function() {
-    document.body.style.backgroundPosition = `0% ${window.pageYOffset / 20}px`;
-  });
-
-          </script>
-
-
-
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </main>
-        <footer>
-          <p>&copy;
-            <script>document.write(new Date().getFullYear())</script> arvdevable, All Rights Reserved
-          </p>
-        </footer>
-      </div>
-    </div>
-
-  </div>
-
+    <section>
+      <h3>Top Stories</h3>
+      <article>
+        <h4><a href="articles\6157854-why-i-make-arvdevable.html">Why I Make "arvdevable"</a></h4>
+        <p>Music has always been a big part of my life, and as a hobby, I create songs that often incorporate themes of lonel...</p>
+      </article>
+      <article>
+        <h4><a href="https://open.spotify.com/playlist/3GLqFbOoIlJeGCRi69oWzc">My Discography: <b>Picked</b></a></h4>
+        <p>Here is my Spotify playlist filled with my handpicked released discography on my Spotify profile.</p>
+      </article>
+      <article>
+        <h4><a href="https://ampl.ink/cant-help">"can't help" is Released Everywhere!</a></h4>
+        <p>Listen "can't help" here!</p>
+      </article>
+    </section>
+    <section>
+      <h3>All News</h3>
+      <article>
+        <h4><a href="https://www.youtube.com/watch?v=Z9aOX7HQH7M">it's here</a></h4>
+        <p>
+            let's appreciate people, experiences, and things in our lives while they are still present.</p>
+      </article>
+      <article>
+        <h4><a href="https://ampl.ink/cant-help">"can't help" is Released Everywhere!</a></h4>
+        <p>Listen "can't help" here!</p>
+      </article>
+    </section>
+    <section>
+      <h3>Releases</h3>
+              <article>
+          <h4>discography picks</h4>
+          <div style="left: 0; width: 100%; height: 352px; position: relative;"><iframe src="https://open.spotify.com/embed/playlist/3GLqFbOoIlJeGCRi69oWzc?utm_source=oembed" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture;"></iframe></div>
+        </article>
+        <article>
+          <h4>YouTube</h4>
+          <div><div style="left: 0; width: 100%; height: 140px; position: relative; padding-bottom: 0;"><iframe src="//iframely.net/api/iframe?app=1&url=https%3A%2F%2Fwww.youtube.com%2F%40arvdevable&key=2d1c2d787188a09d6b383535618f5be6" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div></div><script async src="//iframely.net/embed.js" charset="utf-8"></script>  </main>
+  <footer>
+    <p>&copy; 2023 arvdevable</p>
+  </footer>
 </body>
 
 </html>

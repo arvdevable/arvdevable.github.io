@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+
+body {
+  font-family: Georgia, Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: "Gloock";
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+section {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+article {
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+article h4 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #000000;
+  z-index: 1;
+}
+
+article p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
