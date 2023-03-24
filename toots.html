@@ -34,12 +34,42 @@
 			font-weight: bold;
 			color: #ffffff;
             filter: blur(5px);
+            
+            transition: filter 0.2s ease, transform 0.2s ease, text-decoration 0.2s ease;
 		}
+        h1 .ihv {
+            position: absolute;
+            z-index: 1;
+        }
+        h1:hover {
+            filter: blur(0px);
+            transform: translateY(50px);
+            text-decoration: underline;
+        }
+        .h1titlehelp {
+            position: absolute;
+            z-index: -1;
+            transition: none;
+            margin-top: -28px;
+            margin-left: 80px;
+        }
+        .h1titlehelp:hover {
+            filter: blur(50px);
+            transform: none;
+        }
 		p {
             font-size: 14px;
 			color: #ffffff;
             margin-top: -1px;
+            transition: filter 0.2s ease;
+            
 		}
+        h1:hover ~ p,
+        h1:hover ~ a,
+        h1:hover ~ div,
+        h1:hover ~ .h1titlehelp {
+          filter: blur(50px);
+        }
 		button {
             border: 2px solid;
 			padding: 10px 20px;
@@ -57,9 +87,12 @@
         a {
             color: #ffffff;
             border-radius: 10px;
-            text-decoration: none;
             font-family: 'Libre Baskerville', serif;
-            filter: blur(5px);
+            filter: blur(0px);
+            transition: filter 0.2s ease;
+        }
+        a:hover {
+            filter: blur(2px);
         }
         footer {
   position: absolute;
@@ -80,6 +113,9 @@ footer p {
 .no-blur {
     filter: blur(0px);
 }
+.no-blur:hover {
+    filter: blur(0px);
+}
 
 
 	</style>
@@ -88,8 +124,11 @@ footer p {
     <div class="wrapper">
 	<div class="container">
         <div class="content">
-		<h1>the other side of the sky.</h1>
+		<h1 class="ihv">the other side of the sky.</h1>
+        <h1 class="h1titlehelp">the other side of the sky.</h1>
 		<p>be the first to listen to my new ep.<br><a href="https://hypeddit.com/qceewo">pre-save</a> it now and get notified when it's released.</p>
+        <br>
+        <p>read the short story for this ep <a href="https://hypeddit.com/qceewo">here</a>.</p>
 	</div>
 </div>
     <footer>
