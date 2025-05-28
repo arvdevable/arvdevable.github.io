@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>terms of use — axelleondrugs*</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-transform: lowercase;
+    }
+    h1, h2 {
+      text-transform: lowercase;
+    }
+    h1 {
+      margin-bottom: 0;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    ul {
+      margin: 0;
+      padding: 0 0 0 1.5em;
+    }
+    li {
+      list-style-type: disc;
+      margin: 0.5em 0;
+    }
+    p {
+      margin-top: 0;
+    }
+    footer {
+      margin-top: 2em;
+      font-size: small;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>terms of use</h1>
+  <h2>for axelle’s songs and sample packs</h2>
+  <p>last updated: 28th of may, 2025</p>
+
+  <p>these terms apply to all songs and sample packs released under the name <strong>axelleondrugs*</strong>, including those distributed via booth, bandcamp, fourthwall, and other platforms. by purchasing, downloading, or using this content, you agree to the terms below.</p>
+
+  <h2>i. definitions</h2>
+  <ul>
+    <li><strong>axelle</strong>: the artist persona “axelleondrugs*”.</li>
+    <li><strong>you</strong>: the person using the music or sample pack.</li>
+    <li><strong>label-released</strong>: released via a third-party label (excluding <em>shush.</em>).</li>
+    <li><strong>self-released</strong>: independently published by axelle.</li>
+    <li><strong>shush. released</strong>: released under the in-house label <em>shush.</em></li>
+    <li><strong>commercial use</strong>: any revenue-generating usage.</li>
+    <li><strong>derivative work</strong>: remix, edit, sample-based work derived from axelle’s material.</li>
+  </ul>
+
+  <h2>ii. songs — usage rights</h2>
+
+  <h3>a. streaming & personal use</h3>
+  <p>all songs are for personal listening only. redistribution, reuploading, or file sharing is prohibited.</p>
+
+  <h3>b. use in content (youtube, twitch, etc)</h3>
+  <ul>
+    <li><strong>label-released:</strong> follow the label’s copyright policy. monetized use without a license is not allowed.</li>
+    <li><strong>self-released:</strong> allowed for non-commercial content. commercial use requires permission.</li>
+    <li><strong>shush. released:</strong> allowed in non-commercial creative works with credit. monetized use is case-by-case.</li>
+  </ul>
+
+  <h3>c. remixing / sampling from songs</h3>
+  <ul>
+    <li>label-released: no remixing/sampling without a license.</li>
+    <li>self-released or shush.: personal remixes allowed; public distribution requires explicit permission.</li>
+    <li>credit must be given for any derivative use.</li>
+  </ul>
+
+  <h2>iii. sample packs — usage rights</h2>
+
+  <h3>a. allowed uses</h3>
+  <ul>
+    <li>use in original music or commercial work.</li>
+    <li>modify, chop, or redesign the samples creatively. [contact if necessary]</li>
+    <li>use in game dev, film scoring, sound design, etc. [you must contact us <small>but we're open for commissions!</small>]</li>
+  </ul>
+
+  <h3>b. prohibited uses</h3>
+  <ul>
+    <li>do not resell or redistribute raw samples.</li>
+    <li>do not upload isolated samples as your own.</li>
+    <li>do not include in other sample packs.</li>
+    <li>do not claim unchanged loops as original.</li>
+  </ul>
+
+  <h3>c. attribution</h3>
+  <p>not required, but appreciated.</p>
+
+  <h2>iv. licensing inquiries</h2>
+  <p>for remixes, sync, collabs, or commercial clearance, contact via email with full details. requests will be handled on a case-by-case basis.</p>
+
+  <h2>v. final note</h2>
+  <p>axelle is more than a sound — she’s a world. protect it. if you’re unsure about a use, reach out. the door is open.</p>
+  <p>contact us, axelleondrugs@gmail.com</p>
+
+  <footer>
+    &copy; blasius nafiri marvin. all rights reserved.
+  </footer>
+
+</body>
+</html>
